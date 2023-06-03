@@ -3,5 +3,9 @@
 [node name="Burim" type="CharacterBody2D"]
 
 [node name="Aparencia" type="Sprite2D" parent="."]
+position = Vector2(134, 129)
+hframes = 6
+vframes = 6
+frame = 21
 
-[node name="Colisao" type="CollisionShape2D" parent="."]
+[node name="Colisão" type="CollisionShape2D" parent="."]
