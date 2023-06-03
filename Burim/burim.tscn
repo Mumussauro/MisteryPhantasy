@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://jr7tw51n5mvl"]
+
+[node name="Burim" type="CharacterBody2D"]
+
+[node name="Aparencia" type="Sprite2D" parent="."]
+
+[node name="Colisao" type="CollisionShape2D" parent="."]
