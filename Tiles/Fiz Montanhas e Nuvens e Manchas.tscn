@@ -21,8 +21,6 @@
 
 [node name="Nuvens" type="Node" parent="."]
 
-[node name="Flutuancia" type="AnimationPlayer" parent="Nuvens"]
-
 [node name="nuvens" type="Node2D" parent="Nuvens"]
 
 [node name="Group1" type="Sprite2D" parent="Nuvens/nuvens"]
@@ -164,7 +162,7 @@ position = Vector2(1124, 309)
 texture = ExtResource("10_6n6as")
 
 [node name="ManchaFundo" type="Sprite2D" parent="."]
-modulate = Color(0.972549, 0.956863, 0.964706, 1)
+visible = false
 
 [node name="ManchaAzulBebe" type="Sprite2D" parent="ManchaFundo"]
 visibility_layer = 512
