@@ -19,6 +19,8 @@
 
 [node name="Node2D" type="Node2D"]
 
+[node name="PointLight2D" type="PointLight2D" parent="."]
+
 [node name="Nuvens" type="Node" parent="."]
 
 [node name="nuvens" type="Node2D" parent="Nuvens"]
@@ -162,7 +164,6 @@ position = Vector2(1124, 309)
 texture = ExtResource("10_6n6as")
 
 [node name="ManchaFundo" type="Sprite2D" parent="."]
-visible = false
 
 [node name="ManchaAzulBebe" type="Sprite2D" parent="ManchaFundo"]
 visibility_layer = 512
