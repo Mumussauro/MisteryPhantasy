@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://cpp735uiy4yts"]
+[gd_scene load_steps=15 format=3 uid="uid://cpp735uiy4yts"]
 
 [ext_resource type="Texture2D" uid="uid://b1l23xxb0eqyv" path="res://Visual Props/Nuvens/Nuvens Azuis/Group_1.png" id="5_8umo0"]
 [ext_resource type="Texture2D" uid="uid://crftgtlinrse6" path="res://Visual Props/Nuvens/Nuvens Azuis/Group_2.png" id="6_2dagq"]
@@ -11,15 +11,11 @@
 [ext_resource type="Texture2D" uid="uid://qcmevxjf1rfp" path="res://Visual Props/Nuvens/Nuvens Azuis/Group_5.png" id="13_efb7d"]
 [ext_resource type="Texture2D" uid="uid://w8g8710t80yd" path="res://Visual Props/Nuvens/Nuvens Azuis/Group_6.png" id="14_xd36e"]
 [ext_resource type="Texture2D" uid="uid://dc7guocq2cbwc" path="res://Visual Props/Nuvens/Nuvens Azuis/Group_7.png" id="15_ic703"]
-[ext_resource type="Texture2D" uid="uid://b5arjkkrt6bqv" path="res://Visual Props/ManchaAzulBebe.png" id="15_pq7il"]
-[ext_resource type="Texture2D" uid="uid://dtkv2q0u2oxhh" path="res://Visual Props/ManchaBranca.png" id="16_c1oa8"]
 [ext_resource type="Texture2D" uid="uid://ccbrm4nexmh1c" path="res://Visual Props/Nuvens/Nuvens Azuis/Group_8.png" id="16_nnn34"]
 [ext_resource type="Texture2D" uid="uid://kekkh7ykafn4" path="res://Visual Props/Nuvens/Nuvens Azuis/Group_9.png" id="17_b8prh"]
 [ext_resource type="Texture2D" uid="uid://clluhtmohjigi" path="res://Visual Props/Nuvens/Nuvens Azuis/Group_10.png" id="18_dks21"]
 
 [node name="Node2D" type="Node2D"]
-
-[node name="PointLight2D" type="PointLight2D" parent="."]
 
 [node name="Nuvens" type="Node" parent="."]
 
@@ -163,64 +159,4 @@ texture = ExtResource("5_8umo0")
 position = Vector2(1124, 309)
 texture = ExtResource("10_6n6as")
 
-[node name="ManchaFundo" type="Sprite2D" parent="."]
-
-[node name="ManchaAzulBebe" type="Sprite2D" parent="ManchaFundo"]
-visibility_layer = 512
-z_index = -2
-position = Vector2(-29, 449)
-scale = Vector2(19.2148, 13.3726)
-
-[node name="ManchaAzulBebe2" type="Sprite2D" parent="ManchaFundo"]
-z_index = -2
-position = Vector2(-116, 196)
-texture = ExtResource("15_pq7il")
-
-[node name="ManchaBranca" type="Sprite2D" parent="ManchaFundo"]
-z_index = -1
-position = Vector2(469, -57)
-texture = ExtResource("16_c1oa8")
-
-[node name="ManchaAzulBebe3" type="Sprite2D" parent="ManchaFundo"]
-z_index = -2
-position = Vector2(592, 118)
-scale = Vector2(0.743056, 0.743056)
-texture = ExtResource("15_pq7il")
-
-[node name="ManchaBranca2" type="Sprite2D" parent="ManchaFundo"]
-z_index = -1
-position = Vector2(-356, 560)
-scale = Vector2(1.57813, 1.57813)
-texture = ExtResource("16_c1oa8")
-
-[node name="ManchaAzulBebe4" type="Sprite2D" parent="ManchaFundo"]
-z_index = -2
-position = Vector2(-113, 497)
-texture = ExtResource("15_pq7il")
-
-[node name="ManchaBranca3" type="Sprite2D" parent="ManchaFundo"]
-z_index = -1
-position = Vector2(264, 554)
-texture = ExtResource("16_c1oa8")
-
-[node name="ManchaAzulBebe5" type="Sprite2D" parent="ManchaFundo"]
-z_index = -2
-position = Vector2(674, 439)
-texture = ExtResource("15_pq7il")
-
-[node name="ManchaAzulBebe6" type="Sprite2D" parent="ManchaFundo"]
-z_index = -2
-position = Vector2(806, 187)
-texture = ExtResource("15_pq7il")
-
-[node name="ManchaBranca4" type="Sprite2D" parent="ManchaFundo"]
-z_index = -1
-position = Vector2(1081, 121)
-scale = Vector2(0.585069, 0.585069)
-texture = ExtResource("16_c1oa8")
-
-[node name="ManchaBranca5" type="Sprite2D" parent="ManchaFundo"]
-z_index = -1
-position = Vector2(549, 174)
-scale = Vector2(0.488042, 0.488042)
-texture = ExtResource("16_c1oa8")
+[node name="PointLight2D" type="PointLight2D" parent="."]
