@@ -1402,6 +1402,7 @@ metadata/_edit_vertical_guides_ = [591.0]
 [node name="Montanhas" type="Node" parent="Fundo"]
 
 [node name="MontanhaFlutuar" type="AnimationPlayer" parent="Fundo/Montanhas"]
+autoplay = "MontanhasFlutuantes"
 libraries = {
 "": SubResource("AnimationLibrary_jmqhw")
 }
@@ -1441,6 +1442,7 @@ texture = ExtResource("3_kchkn")
 [node name="Nuvens 1" type="Node2D" parent="Fundo/Nuvens"]
 
 [node name="FlutuanciaNuvens" type="AnimationPlayer" parent="Fundo/Nuvens/Nuvens 1"]
+autoplay = "Flutuancia"
 speed_scale = -2.46
 libraries = {
 "": SubResource("AnimationLibrary_i7qay")
@@ -1482,6 +1484,7 @@ texture = ExtResource("10_jm085")
 [node name="Nuvens 2" type="Node2D" parent="Fundo/Nuvens"]
 
 [node name="Flutuancia 2" type="AnimationPlayer" parent="Fundo/Nuvens/Nuvens 2"]
+autoplay = "Flutuancia2"
 speed_scale = -2.46
 libraries = {
 "": SubResource("AnimationLibrary_qgyps")
@@ -1525,6 +1528,7 @@ texture = ExtResource("5_j6avu")
 [node name="Nuvens 3" type="Node2D" parent="Fundo/Nuvens"]
 
 [node name="Flutuancia 3" type="AnimationPlayer" parent="Fundo/Nuvens/Nuvens 3"]
+autoplay = "Flutuancia4"
 speed_scale = -2.46
 libraries = {
 "": SubResource("AnimationLibrary_25f5q")
