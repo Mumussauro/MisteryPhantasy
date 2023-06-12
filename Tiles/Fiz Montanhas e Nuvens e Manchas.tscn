@@ -709,30 +709,25 @@ texture = ExtResource("6_2dagq")
 [node name="Group8" type="Sprite2D" parent="Nuvens/Nuvens 2"]
 z_index = 3
 position = Vector2(951, 306)
-scale = Vector2(1, 1)
 texture = ExtResource("12_jryvy")
 
 [node name="Group11" type="Sprite2D" parent="Nuvens/Nuvens 2"]
 z_index = 5
 position = Vector2(364, 371)
-scale = Vector2(1, 1)
 texture = ExtResource("15_ic703")
 
 [node name="Group17" type="Sprite2D" parent="Nuvens/Nuvens 2"]
 z_index = 1
 position = Vector2(840, 458)
-scale = Vector2(1, 1)
 texture = ExtResource("15_ic703")
 
 [node name="Group20" type="Sprite2D" parent="Nuvens/Nuvens 2"]
 position = Vector2(220, 71)
-scale = Vector2(1, 1)
 texture = ExtResource("14_xd36e")
 
 [node name="Group21" type="Sprite2D" parent="Nuvens/Nuvens 2"]
 z_index = 2
 position = Vector2(541, 190)
-scale = Vector2(1, 1)
 texture = ExtResource("6_2dagq")
 
 [node name="Group26" type="Sprite2D" parent="Nuvens/Nuvens 2"]
