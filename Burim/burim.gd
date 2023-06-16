@@ -17,7 +17,6 @@ func _physics_process(_delta):
 	direcao()
 	
 func move() -> void:
-	#var direction: Vector2 = get_direction()
 	velocity = direction() * SPEED
 	move_and_slide()
 	
@@ -47,6 +46,6 @@ func direcao() -> void:
 	if velocity.x > 0:
 		texture.flip_h = false
 		
-	if velocity.x <0:
+	if velocity.x < 0:
 		texture.flip_h = true
 	return
