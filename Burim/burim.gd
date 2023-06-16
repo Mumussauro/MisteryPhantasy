@@ -17,11 +17,11 @@ func _physics_process(_delta):
 	direcao()
 	
 func move() -> void:
-	var direction: Vector2 = get_direction()
-	velocity = direction * SPEED
+	#var direction: Vector2 = get_direction()
+	velocity = direction() * SPEED
 	move_and_slide()
 	
-func get_direction() -> Vector2:
+func direction() -> Vector2:
 	return Vector2(
 		Input.get_axis("andar_esq", "andar_dir"),
 		Input.get_axis("subir_", "descer_")
