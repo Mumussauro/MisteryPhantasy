@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://cx6urd7xtx6s1"]
+[gd_scene load_steps=40 format=3 uid="uid://cx6urd7xtx6s1"]
 
 [ext_resource type="Texture2D" uid="uid://bjtdhgchdtlbl" path="res://Visual Props/Montanhas/Group_1.png" id="1_id2m3"]
 [ext_resource type="Texture2D" uid="uid://duqiq0q60ha02" path="res://Visual Props/Montanhas/Group_2.png" id="2_602bx"]
@@ -17,6 +17,8 @@
 [ext_resource type="Texture2D" uid="uid://dlx1k4ptbpbc6" path="res://Visual Props/Manchas/ManchaBranca.png" id="15_ejud6"]
 [ext_resource type="Texture2D" uid="uid://btwhuu6jfoyb3" path="res://Visual Props/Manchas/ManchaBranca(2).png" id="16_n2ial"]
 [ext_resource type="Texture2D" uid="uid://o8ghbohg30pc" path="res://Visual Props/Manchas/ManchaAzultangular.png" id="17_tykr3"]
+[ext_resource type="Texture2D" uid="uid://8d7ri1qmof3s" path="res://Tiles/Rachadura e Parede.png" id="18_pg188"]
+[ext_resource type="Texture2D" uid="uid://deoavbtqk6b5d" path="res://Tiles/Buraquinhos.png" id="19_5tfr0"]
 [ext_resource type="Texture2D" uid="uid://w7djsibvemqt" path="res://Tiles/Ground Terra.png" id="19_hqx3j"]
 [ext_resource type="PackedScene" uid="uid://jr7tw51n5mvl" path="res://Burim/burim.tscn" id="20_63wtb"]
 
@@ -1286,7 +1288,59 @@ _data = {
 "RESET": SubResource("Animation_7o4bm")
 }
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6t36t"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_g40pc"]
+texture = ExtResource("19_5tfr0")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+0:0/0/terrain_set = 0
+0:0/0/terrain = 0
+0:0/0/terrains_peering_bit/bottom_side = 0
+1:0/0 = 0
+1:0/0/terrain_set = 0
+1:0/0/terrain = 0
+1:0/0/terrains_peering_bit/bottom_side = 0
+1:1/0 = 0
+1:1/0/terrain_set = 0
+1:1/0/terrain = 0
+1:1/0/terrains_peering_bit/left_side = 0
+1:1/0/terrains_peering_bit/top_side = 0
+0:1/0 = 0
+0:1/0/terrain_set = 0
+0:1/0/terrain = 0
+0:1/0/terrains_peering_bit/right_side = 0
+0:1/0/terrains_peering_bit/top_side = 0
+0:2/0 = 0
+0:2/0/terrain_set = 0
+0:2/0/terrain = 0
+0:2/0/terrains_peering_bit/right_side = 0
+0:2/0/terrains_peering_bit/top_side = 0
+1:2/0 = 0
+1:2/0/terrain_set = 0
+1:2/0/terrain = 0
+1:2/0/terrains_peering_bit/top_side = 0
+2:0/0 = 0
+2:0/0/terrain_set = 0
+2:0/0/terrain = 0
+2:0/0/terrains_peering_bit/left_side = 0
+2:1/0 = 0
+2:1/0/terrain_set = 0
+2:1/0/terrain = 0
+2:1/0/terrains_peering_bit/bottom_side = 0
+2:1/0/terrains_peering_bit/top_side = 0
+2:2/0 = 0
+2:2/0/terrain_set = 0
+2:2/0/terrain = 0
+2:2/0/terrains_peering_bit/bottom_side = 0
+2:2/0/terrains_peering_bit/top_side = 0
+
+[sub_resource type="TileSet" id="TileSet_u5aal"]
+tile_size = Vector2i(64, 64)
+terrain_set_0/mode = 0
+terrain_set_0/terrain_0/name = "Buraquinhos"
+terrain_set_0/terrain_0/color = Color(0.501961, 1, 0.509804, 1)
+sources/0 = SubResource("TileSetAtlasSource_g40pc")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vdvty"]
 texture = ExtResource("19_hqx3j")
 texture_region_size = Vector2i(64, 64)
 0:0/0 = 0
@@ -1386,12 +1440,87 @@ texture_region_size = Vector2i(64, 64)
 3:3/0/terrain_set = 0
 3:3/0/terrain = 0
 
-[sub_resource type="TileSet" id="TileSet_kmcso"]
+[sub_resource type="TileSet" id="TileSet_sqjmx"]
 tile_size = Vector2i(64, 64)
 terrain_set_0/mode = 0
-terrain_set_0/terrain_0/name = "Terrain 0"
-terrain_set_0/terrain_0/color = Color(0.678431, 0, 0.756863, 1)
-sources/2 = SubResource("TileSetAtlasSource_6t36t")
+terrain_set_0/terrain_0/name = "Terra"
+terrain_set_0/terrain_0/color = Color(0.709804, 0.203922, 1, 1)
+sources/0 = SubResource("TileSetAtlasSource_vdvty")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2tfwa"]
+texture = ExtResource("18_pg188")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+0:2/0 = 0
+0:2/0/terrain_set = 0
+0:2/0/terrain = 0
+0:2/0/terrains_peering_bit/right_side = 0
+0:2/0/terrains_peering_bit/bottom_right_corner = 0
+0:2/0/terrains_peering_bit/bottom_side = 0
+1:2/0 = 0
+1:2/0/terrain_set = 0
+1:2/0/terrain = 0
+1:2/0/terrains_peering_bit/right_side = 0
+1:2/0/terrains_peering_bit/bottom_right_corner = 0
+1:2/0/terrains_peering_bit/bottom_side = 0
+1:2/0/terrains_peering_bit/bottom_left_corner = 0
+1:2/0/terrains_peering_bit/left_side = 0
+2:2/0 = 0
+2:2/0/terrain_set = 0
+2:2/0/terrain = 0
+2:2/0/terrains_peering_bit/bottom_side = 0
+2:2/0/terrains_peering_bit/bottom_left_corner = 0
+2:2/0/terrains_peering_bit/left_side = 0
+3:2/0 = 0
+3:2/0/terrain_set = 0
+3:2/0/terrain = 0
+3:2/0/terrains_peering_bit/bottom_side = 0
+0:3/0 = 0
+0:3/0/terrain_set = 0
+0:3/0/terrain = 0
+0:3/0/terrains_peering_bit/right_side = 0
+0:3/0/terrains_peering_bit/bottom_right_corner = 0
+0:3/0/terrains_peering_bit/bottom_side = 0
+0:3/0/terrains_peering_bit/top_side = 0
+0:3/0/terrains_peering_bit/top_right_corner = 0
+1:3/0 = 0
+1:3/0/terrain_set = 0
+1:3/0/terrain = 0
+1:3/0/terrains_peering_bit/right_side = 0
+1:3/0/terrains_peering_bit/bottom_right_corner = 0
+1:3/0/terrains_peering_bit/bottom_side = 0
+1:3/0/terrains_peering_bit/bottom_left_corner = 0
+1:3/0/terrains_peering_bit/left_side = 0
+1:3/0/terrains_peering_bit/top_left_corner = 0
+1:3/0/terrains_peering_bit/top_side = 0
+1:3/0/terrains_peering_bit/top_right_corner = 0
+2:3/0 = 0
+2:3/0/terrain_set = 0
+2:3/0/terrain = 0
+2:3/0/terrains_peering_bit/bottom_side = 0
+2:3/0/terrains_peering_bit/bottom_left_corner = 0
+2:3/0/terrains_peering_bit/left_side = 0
+2:3/0/terrains_peering_bit/top_left_corner = 0
+2:3/0/terrains_peering_bit/top_side = 0
+3:3/0 = 0
+3:3/0/terrain_set = 0
+3:3/0/terrain = 0
+3:3/0/terrains_peering_bit/bottom_side = 0
+3:3/0/terrains_peering_bit/top_side = 0
+
+[sub_resource type="TileSet" id="TileSet_dt13a"]
+tile_size = Vector2i(64, 64)
+terrain_set_0/mode = 0
+terrain_set_0/terrain_0/name = "Parede 0"
+terrain_set_0/terrain_0/color = Color(0, 0.619608, 1, 1)
+sources/0 = SubResource("TileSetAtlasSource_2tfwa")
 
 [node name="Cena" type="Node2D"]
 metadata/_edit_vertical_guides_ = [591.0]
@@ -1647,7 +1776,7 @@ texture = ExtResource("17_tykr3")
 
 [node name="ManchaAzultangular3" type="Sprite2D" parent="Fundo/Manchas"]
 z_index = -1
-position = Vector2(943, 558)
+position = Vector2(1021, 557)
 scale = Vector2(1.27756, 1.27756)
 texture = ExtResource("17_tykr3")
 
@@ -1658,7 +1787,6 @@ scale = Vector2(0.580373, 0.580373)
 texture = ExtResource("17_tykr3")
 
 [node name="ManchaBranca(2)" type="Sprite2D" parent="Fundo"]
-visible = false
 position = Vector2(254, 780)
 scale = Vector2(0.65739, 0.65739)
 texture = ExtResource("16_n2ial")
@@ -1680,9 +1808,27 @@ texture = ExtResource("16_n2ial")
 
 [node name="Fase" type="Node2D" parent="."]
 
-[node name="Primeiro Bloco" type="TileMap" parent="Fase"]
-z_index = 3
-tile_set = SubResource("TileSet_kmcso")
+[node name="Buraquinhos e Detalhes" type="TileMap" parent="Fase"]
+modulate = Color(1, 0.917647, 0.745098, 0.282353)
+top_level = true
+z_index = 4
+tile_set = SubResource("TileSet_u5aal")
 cell_quadrant_size = 64
 format = 2
-layer_0/tile_data = PackedInt32Array(458760, 2, 2, 458761, 131074, 2, 393224, 65538, 1, 393225, 131074, 1, 327690, 65538, 2, 327689, 65538, 1, 327688, 65538, 1, 262152, 65538, 0, 262154, 65538, 1, 262155, 65538, 0, 262156, 65538, 0, 262157, 65538, 0, 327693, 65538, 1, 327692, 65538, 1, 327691, 65538, 2, 393228, 2, 1, 393229, 65538, 1, 458765, 65538, 2, 458764, 2, 2, 458766, 131074, 2, 393230, 131074, 1, 327694, 131074, 1, 262158, 131074, 0, 262150, 2, 1, 327686, 2, 1, 393222, 2, 2, 393223, 65538, 2, 327687, 65538, 1, 262151, 65538, 1, 262153, 65538, 1, 196614, 2, 0, 196615, 131074, 0, 196617, 2, 0, 196618, 131074, 0, 196624, 2, 0, 262160, 2, 2, 327696, 65538, 1, 393232, 65538, 2, 393233, 131074, 2, 327697, 131074, 1, 262161, 131074, 2, 196625, 131074, 0)
+layer_0/tile_data = PackedInt32Array(196619, 131072, 1, 262157, 0, 0, 262158, 0, 1, 262159, 131072, 0, 262160, 65536, 2, 196625, 0, 0, 262161, 131072, 2, 262156, 65536, 2, 196621, 65536, 2, 196622, 65536, 0, 262155, 131072, 1, 327691, 0, 2, 327692, 131072, 0, 327693, 65536, 2, 393233, 131072, 0, 393232, 0, 2, 327697, 65536, 2, 131089, 65536, 2, 196624, 65536, 2, 131088, 65536, 0)
+
+[node name="Terra" type="TileMap" parent="Fase"]
+z_index = 3
+position = Vector2(200, 0)
+tile_set = SubResource("TileSet_sqjmx")
+cell_quadrant_size = 64
+format = 2
+layer_0/tile_data = PackedInt32Array(196616, 0, 0, 196617, 65536, 0, 196618, 65536, 0, 262154, 65536, 1, 327690, 131072, 2, 327689, 65536, 2, 327688, 0, 2, 262152, 0, 1, 262153, 65536, 1, 262155, 65536, 2, 262156, 65536, 2, 196620, 65536, 0, 196619, 65536, 0, 131085, 0, 0, 196621, 65536, 1, 262157, 65536, 1, 327693, 0, 1, 393229, 0, 2, 393230, 131072, 2, 327694, 131072, 1, 262158, 131072, 1, 196622, 131072, 1, 131086, 131072, 0)
+
+[node name="Parede" type="TileMap" parent="Fase"]
+z_index = 3
+position = Vector2(200, 0)
+tile_set = SubResource("TileSet_dt13a")
+cell_quadrant_size = 64
+format = 2
+layer_0/tile_data = PackedInt32Array(393224, 0, 2, 393225, 65536, 2, 393226, 131072, 2, 458762, 131072, 3, 458761, 65536, 3, 458760, 0, 3, 327691, 0, 2, 327692, 131072, 2, 393227, 0, 3, 458763, 0, 3, 393228, 131072, 3, 458764, 131072, 3, 458766, 131072, 2, 458765, 0, 2, 524302, 131072, 3, 524301, 0, 3, 589838, 131072, 3, 589837, 0, 3)
