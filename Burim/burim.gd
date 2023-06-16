@@ -51,3 +51,6 @@ func direcao() -> void:
 		texture.flip_h = true
 		areataq.position.x = -59
 	return
+
+
+#oi amor
