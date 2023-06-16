@@ -656,7 +656,6 @@ texture = ExtResource("10_6n6as")
 [node name="Nuvens 1" type="Node2D" parent="Nuvens"]
 
 [node name="FlutuanciaNuvens" type="AnimationPlayer" parent="Nuvens/Nuvens 1"]
-autoplay = "Flutuancia"
 libraries = {
 "": SubResource("AnimationLibrary_i7qay")
 }
@@ -697,7 +696,6 @@ texture = ExtResource("13_efb7d")
 [node name="Nuvens 2" type="Node2D" parent="Nuvens"]
 
 [node name="Flutuancia 2" type="AnimationPlayer" parent="Nuvens/Nuvens 2"]
-autoplay = "Flutuancia2"
 libraries = {
 "": SubResource("AnimationLibrary_qgyps")
 }
