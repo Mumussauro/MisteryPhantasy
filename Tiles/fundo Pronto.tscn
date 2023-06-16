@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=3 uid="uid://ebkalnpe555w"]
+[gd_scene load_steps=36 format=3 uid="uid://cx6urd7xtx6s1"]
 
 [ext_resource type="Texture2D" uid="uid://bjtdhgchdtlbl" path="res://Visual Props/Montanhas/Group_1.png" id="1_id2m3"]
 [ext_resource type="Texture2D" uid="uid://duqiq0q60ha02" path="res://Visual Props/Montanhas/Group_2.png" id="2_602bx"]
@@ -19,6 +19,7 @@
 [ext_resource type="Texture2D" uid="uid://o8ghbohg30pc" path="res://Visual Props/Manchas/ManchaAzultangular.png" id="17_tykr3"]
 [ext_resource type="Texture2D" uid="uid://8d7ri1qmof3s" path="res://Tiles/Rachadura e Parede.png" id="18_pg188"]
 [ext_resource type="Texture2D" uid="uid://bixqw8u07bgig" path="res://Tiles/Ground Grama.png" id="19_dk5t5"]
+[ext_resource type="PackedScene" uid="uid://jr7tw51n5mvl" path="res://Burim/burim.tscn" id="20_63wtb"]
 
 [sub_resource type="Animation" id="Animation_5jv0f"]
 resource_name = "MontanhasFlutuantes"
@@ -126,98 +127,65 @@ tracks/8/keys = {
 tracks/9/type = "bezier"
 tracks/9/imported = false
 tracks/9/enabled = true
-tracks/9/path = NodePath("Group7:position:x")
+tracks/9/path = NodePath("Group7:position:y")
 tracks/9/interp = 1
 tracks/9/loop_wrap = true
 tracks/9/keys = {
 "handle_modes": PackedInt32Array(0, 0, 0, 0),
-"points": PackedFloat32Array(361, -0.25, 0, 0.25, 0, 361, -0.25, 0, 0.25, 0, 361, -0.25, 0, 0.25, 0, 361, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0, 1.9, 3.1, 4)
+"points": PackedFloat32Array(263.051, -0.25, 0, 0.25, 0, 263.051, -0.25, 0, 0.25, 0, 263, -0.25, 0, 0.25, 0, 263.051, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 1.5, 2.6, 4)
 }
 tracks/10/type = "bezier"
 tracks/10/imported = false
 tracks/10/enabled = true
-tracks/10/path = NodePath("Group7:position:y")
+tracks/10/path = NodePath("Group22:position:x")
 tracks/10/interp = 1
 tracks/10/loop_wrap = true
 tracks/10/keys = {
 "handle_modes": PackedInt32Array(0, 0, 0, 0),
-"points": PackedFloat32Array(263.051, -0.25, 0, 0.25, 0, 263.051, -0.25, 0, 0.25, 0, 263, -0.25, 0, 0.25, 0, 263.051, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0, 1.5, 2.6, 4)
+"points": PackedFloat32Array(807, -0.25, 0, 0.25, 0, 807, -0.25, 0, 0.25, 0, 807, -0.25, 0, 0.25, 0, 807, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 1.2, 2.5, 4)
 }
 tracks/11/type = "bezier"
 tracks/11/imported = false
 tracks/11/enabled = true
-tracks/11/path = NodePath("Group7:rotation")
+tracks/11/path = NodePath("Group22:rotation")
 tracks/11/interp = 1
 tracks/11/loop_wrap = true
 tracks/11/keys = {
 "handle_modes": PackedInt32Array(0, 0, 0, 0),
 "points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, -0.0670497, -0.25, 0, 0.25, 0, -0.112248, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0, 0.6, 2.3, 4)
+"times": PackedFloat32Array(0, 0.8, 2.3, 4)
 }
 tracks/12/type = "bezier"
 tracks/12/imported = false
 tracks/12/enabled = true
-tracks/12/path = NodePath("Group22:position:x")
+tracks/12/path = NodePath("Group27:position:x")
 tracks/12/interp = 1
 tracks/12/loop_wrap = true
 tracks/12/keys = {
 "handle_modes": PackedInt32Array(0, 0, 0, 0),
-"points": PackedFloat32Array(807, -0.25, 0, 0.25, 0, 807, -0.25, 0, 0.25, 0, 807, -0.25, 0, 0.25, 0, 807, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0, 1.2, 2.5, 4)
+"points": PackedFloat32Array(1124, -0.25, 0, 0.25, 0, 1124, -0.25, 0, 0.25, 0, 1124, -0.25, 0, 0.25, 0, 1124, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 1.6, 2.1, 4)
 }
 tracks/13/type = "bezier"
 tracks/13/imported = false
 tracks/13/enabled = true
-tracks/13/path = NodePath("Group22:position:y")
+tracks/13/path = NodePath("Group27:position:y")
 tracks/13/interp = 1
 tracks/13/loop_wrap = true
 tracks/13/keys = {
 "handle_modes": PackedInt32Array(0, 0, 0, 0),
-"points": PackedFloat32Array(436.219, -0.25, 0, 0.25, 0, 436.219, -0.25, 0, 0.25, 0, 432, -0.25, 0, 0.25, 0, 436.219, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0, 1.7, 2.8, 4)
+"points": PackedFloat32Array(321.316, -0.25, 0, 0.25, 0, 321.316, -0.25, 0, 0.25, 0, 309, -0.25, 0, 0.25, 0, 321.316, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 1.3, 2.9, 4)
 }
 tracks/14/type = "bezier"
 tracks/14/imported = false
 tracks/14/enabled = true
-tracks/14/path = NodePath("Group22:rotation")
+tracks/14/path = NodePath("Group27:rotation")
 tracks/14/interp = 1
 tracks/14/loop_wrap = true
 tracks/14/keys = {
-"handle_modes": PackedInt32Array(0, 0, 0, 0),
-"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, -0.0670497, -0.25, 0, 0.25, 0, -0.112248, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0, 0.8, 2.3, 4)
-}
-tracks/15/type = "bezier"
-tracks/15/imported = false
-tracks/15/enabled = true
-tracks/15/path = NodePath("Group27:position:x")
-tracks/15/interp = 1
-tracks/15/loop_wrap = true
-tracks/15/keys = {
-"handle_modes": PackedInt32Array(0, 0, 0, 0),
-"points": PackedFloat32Array(1124, -0.25, 0, 0.25, 0, 1124, -0.25, 0, 0.25, 0, 1124, -0.25, 0, 0.25, 0, 1124, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0, 1.6, 2.1, 4)
-}
-tracks/16/type = "bezier"
-tracks/16/imported = false
-tracks/16/enabled = true
-tracks/16/path = NodePath("Group27:position:y")
-tracks/16/interp = 1
-tracks/16/loop_wrap = true
-tracks/16/keys = {
-"handle_modes": PackedInt32Array(0, 0, 0, 0),
-"points": PackedFloat32Array(321.316, -0.25, 0, 0.25, 0, 321.316, -0.25, 0, 0.25, 0, 309, -0.25, 0, 0.25, 0, 321.316, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0, 1.3, 2.9, 4)
-}
-tracks/17/type = "bezier"
-tracks/17/imported = false
-tracks/17/enabled = true
-tracks/17/path = NodePath("Group27:rotation")
-tracks/17/interp = 1
-tracks/17/loop_wrap = true
-tracks/17/keys = {
 "handle_modes": PackedInt32Array(0, 0, 0, 0),
 "points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, -0.0670497, -0.25, 0, 0.25, 0, -0.112248, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
 "times": PackedFloat32Array(0, 0.8, 2.3, 4)
@@ -327,29 +295,29 @@ tracks/8/keys = {
 tracks/9/type = "bezier"
 tracks/9/imported = false
 tracks/9/enabled = true
-tracks/9/path = NodePath("Group7:position:x")
+tracks/9/path = NodePath("Group7:position:y")
 tracks/9/interp = 1
 tracks/9/loop_wrap = true
 tracks/9/keys = {
 "handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(361, -0.25, 0, 0.25, 0),
+"points": PackedFloat32Array(263, -0.25, 0, 0.25, 0),
 "times": PackedFloat32Array(0)
 }
 tracks/10/type = "bezier"
 tracks/10/imported = false
 tracks/10/enabled = true
-tracks/10/path = NodePath("Group7:position:y")
+tracks/10/path = NodePath("Group22:position:x")
 tracks/10/interp = 1
 tracks/10/loop_wrap = true
 tracks/10/keys = {
 "handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(263, -0.25, 0, 0.25, 0),
+"points": PackedFloat32Array(807, -0.25, 0, 0.25, 0),
 "times": PackedFloat32Array(0)
 }
 tracks/11/type = "bezier"
 tracks/11/imported = false
 tracks/11/enabled = true
-tracks/11/path = NodePath("Group7:rotation")
+tracks/11/path = NodePath("Group22:rotation")
 tracks/11/interp = 1
 tracks/11/loop_wrap = true
 tracks/11/keys = {
@@ -360,65 +328,32 @@ tracks/11/keys = {
 tracks/12/type = "bezier"
 tracks/12/imported = false
 tracks/12/enabled = true
-tracks/12/path = NodePath("Group22:position:x")
+tracks/12/path = NodePath("Group27:position:x")
 tracks/12/interp = 1
 tracks/12/loop_wrap = true
 tracks/12/keys = {
 "handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(807, -0.25, 0, 0.25, 0),
+"points": PackedFloat32Array(1124, -0.25, 0, 0.25, 0),
 "times": PackedFloat32Array(0)
 }
 tracks/13/type = "bezier"
 tracks/13/imported = false
 tracks/13/enabled = true
-tracks/13/path = NodePath("Group22:position:y")
+tracks/13/path = NodePath("Group27:position:y")
 tracks/13/interp = 1
 tracks/13/loop_wrap = true
 tracks/13/keys = {
 "handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(432, -0.25, 0, 0.25, 0),
+"points": PackedFloat32Array(309, -0.25, 0, 0.25, 0),
 "times": PackedFloat32Array(0)
 }
 tracks/14/type = "bezier"
 tracks/14/imported = false
 tracks/14/enabled = true
-tracks/14/path = NodePath("Group22:rotation")
+tracks/14/path = NodePath("Group27:rotation")
 tracks/14/interp = 1
 tracks/14/loop_wrap = true
 tracks/14/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0)
-}
-tracks/15/type = "bezier"
-tracks/15/imported = false
-tracks/15/enabled = true
-tracks/15/path = NodePath("Group27:position:x")
-tracks/15/interp = 1
-tracks/15/loop_wrap = true
-tracks/15/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(1124, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0)
-}
-tracks/16/type = "bezier"
-tracks/16/imported = false
-tracks/16/enabled = true
-tracks/16/path = NodePath("Group27:position:y")
-tracks/16/interp = 1
-tracks/16/loop_wrap = true
-tracks/16/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(309, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0)
-}
-tracks/17/type = "bezier"
-tracks/17/imported = false
-tracks/17/enabled = true
-tracks/17/path = NodePath("Group27:rotation")
-tracks/17/interp = 1
-tracks/17/loop_wrap = true
-tracks/17/keys = {
 "handle_modes": PackedInt32Array(0),
 "points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
 "times": PackedFloat32Array(0)
@@ -1397,6 +1332,10 @@ sources/1 = SubResource("TileSetAtlasSource_6pjix")
 [node name="Cena" type="Node2D"]
 metadata/_edit_vertical_guides_ = [591.0]
 
+[node name="Burim" parent="." instance=ExtResource("20_63wtb")]
+top_level = true
+position = Vector2(551, 416)
+
 [node name="Fundo" type="Node2D" parent="."]
 
 [node name="Montanhas" type="Node" parent="Fundo"]
@@ -1422,11 +1361,6 @@ z_index = 9
 position = Vector2(375, 516)
 scale = Vector2(1.22464, 1.22464)
 texture = ExtResource("3_kchkn")
-
-[node name="Group7" type="Sprite2D" parent="Fundo/Montanhas"]
-z_index = 4
-position = Vector2(361, 263)
-texture = ExtResource("4_ryvpw")
 
 [node name="Group22" type="Sprite2D" parent="Fundo/Montanhas"]
 z_index = 5
@@ -1580,7 +1514,6 @@ texture = ExtResource("7_8v6a1")
 [node name="Manchas" type="Node" parent="Fundo"]
 
 [node name="MegaManchaBranca" type="Sprite2D" parent="Fundo/Manchas"]
-modulate = Color(1, 1, 1, 0.964706)
 show_behind_parent = true
 z_index = -3
 position = Vector2(195, 758)
