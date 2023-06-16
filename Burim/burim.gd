@@ -3,7 +3,7 @@ extends CharacterBody2D
 @onready var animation: AnimationPlayer = get_node("Animacao")
 @onready var texture: Sprite2D = get_node("Textura")
 @onready var SPEED = 300.0
-
+@onready var areataq: CollisionShape2D = get_node("Ataque/CollisionShape2D")
 
 var can_attack: bool = true
 
@@ -45,7 +45,9 @@ func _on_animacao_animation_finished(_anim_name: String):
 func direcao() -> void:
 	if velocity.x > 0:
 		texture.flip_h = false
+		areataq.position.x = 59
 		
 	if velocity.x < 0:
 		texture.flip_h = true
+		areataq.position.x = -59
 	return
