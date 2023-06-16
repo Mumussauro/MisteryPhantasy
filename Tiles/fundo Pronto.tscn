@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=3 uid="uid://cx6urd7xtx6s1"]
+[gd_scene load_steps=34 format=3 uid="uid://cx6urd7xtx6s1"]
 
 [ext_resource type="Texture2D" uid="uid://bjtdhgchdtlbl" path="res://Visual Props/Montanhas/Group_1.png" id="1_id2m3"]
 [ext_resource type="Texture2D" uid="uid://duqiq0q60ha02" path="res://Visual Props/Montanhas/Group_2.png" id="2_602bx"]
@@ -17,8 +17,7 @@
 [ext_resource type="Texture2D" uid="uid://dlx1k4ptbpbc6" path="res://Visual Props/Manchas/ManchaBranca.png" id="15_ejud6"]
 [ext_resource type="Texture2D" uid="uid://btwhuu6jfoyb3" path="res://Visual Props/Manchas/ManchaBranca(2).png" id="16_n2ial"]
 [ext_resource type="Texture2D" uid="uid://o8ghbohg30pc" path="res://Visual Props/Manchas/ManchaAzultangular.png" id="17_tykr3"]
-[ext_resource type="Texture2D" uid="uid://8d7ri1qmof3s" path="res://Tiles/Rachadura e Parede.png" id="18_pg188"]
-[ext_resource type="Texture2D" uid="uid://bixqw8u07bgig" path="res://Tiles/Ground Grama.png" id="19_dk5t5"]
+[ext_resource type="Texture2D" uid="uid://w7djsibvemqt" path="res://Tiles/Ground Terra.png" id="19_hqx3j"]
 [ext_resource type="PackedScene" uid="uid://jr7tw51n5mvl" path="res://Burim/burim.tscn" id="20_63wtb"]
 
 [sub_resource type="Animation" id="Animation_5jv0f"]
@@ -1287,47 +1286,112 @@ _data = {
 "RESET": SubResource("Animation_7o4bm")
 }
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yv0v0"]
-texture = ExtResource("18_pg188")
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6pjix"]
-texture = ExtResource("19_dk5t5")
-separation = Vector2i(1, 0)
-texture_region_size = Vector2i(39, 51)
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6t36t"]
+texture = ExtResource("19_hqx3j")
+texture_region_size = Vector2i(64, 64)
 0:0/0 = 0
+0:0/0/terrain_set = 0
+0:0/0/terrain = 0
+0:0/0/terrains_peering_bit/right_side = 0
+0:0/0/terrains_peering_bit/bottom_right_corner = 0
+0:0/0/terrains_peering_bit/bottom_side = 0
 1:0/0 = 0
+1:0/0/terrain_set = 0
+1:0/0/terrain = 0
+1:0/0/terrains_peering_bit/right_side = 0
+1:0/0/terrains_peering_bit/bottom_right_corner = 0
+1:0/0/terrains_peering_bit/bottom_side = 0
+1:0/0/terrains_peering_bit/bottom_left_corner = 0
+1:0/0/terrains_peering_bit/left_side = 0
 2:0/0 = 0
+2:0/0/terrain_set = 0
+2:0/0/terrain = 0
+2:0/0/terrains_peering_bit/bottom_side = 0
+2:0/0/terrains_peering_bit/bottom_left_corner = 0
+2:0/0/terrains_peering_bit/left_side = 0
 3:0/0 = 0
-4:0/0 = 0
-5:0/0 = 0
+3:0/0/terrain_set = 0
+3:0/0/terrain = 0
+3:0/0/terrains_peering_bit/bottom_side = 0
 0:1/0 = 0
+0:1/0/terrain_set = 0
+0:1/0/terrain = 0
+0:1/0/terrains_peering_bit/right_side = 0
+0:1/0/terrains_peering_bit/bottom_right_corner = 0
+0:1/0/terrains_peering_bit/bottom_side = 0
+0:1/0/terrains_peering_bit/top_side = 0
+0:1/0/terrains_peering_bit/top_right_corner = 0
 1:1/0 = 0
+1:1/0/terrain_set = 0
+1:1/0/terrain = 0
+1:1/0/terrains_peering_bit/right_side = 0
+1:1/0/terrains_peering_bit/bottom_right_corner = 0
+1:1/0/terrains_peering_bit/bottom_side = 0
+1:1/0/terrains_peering_bit/bottom_left_corner = 0
+1:1/0/terrains_peering_bit/left_side = 0
+1:1/0/terrains_peering_bit/top_left_corner = 0
+1:1/0/terrains_peering_bit/top_side = 0
+1:1/0/terrains_peering_bit/top_right_corner = 0
 2:1/0 = 0
+2:1/0/terrain_set = 0
+2:1/0/terrain = 0
+2:1/0/terrains_peering_bit/bottom_side = 0
+2:1/0/terrains_peering_bit/bottom_left_corner = 0
+2:1/0/terrains_peering_bit/left_side = 0
+2:1/0/terrains_peering_bit/top_left_corner = 0
+2:1/0/terrains_peering_bit/top_side = 0
 3:1/0 = 0
-4:1/0 = 0
-5:1/0 = 0
+3:1/0/terrain_set = 0
+3:1/0/terrain = 0
+3:1/0/terrains_peering_bit/bottom_side = 0
+3:1/0/terrains_peering_bit/top_side = 0
 0:2/0 = 0
+0:2/0/terrain_set = 0
+0:2/0/terrain = 0
+0:2/0/terrains_peering_bit/right_side = 0
+0:2/0/terrains_peering_bit/top_side = 0
+0:2/0/terrains_peering_bit/top_right_corner = 0
 1:2/0 = 0
+1:2/0/terrain_set = 0
+1:2/0/terrain = 0
+1:2/0/terrains_peering_bit/right_side = 0
+1:2/0/terrains_peering_bit/left_side = 0
+1:2/0/terrains_peering_bit/top_left_corner = 0
+1:2/0/terrains_peering_bit/top_side = 0
+1:2/0/terrains_peering_bit/top_right_corner = 0
 2:2/0 = 0
+2:2/0/terrain_set = 0
+2:2/0/terrain = 0
+2:2/0/terrains_peering_bit/left_side = 0
+2:2/0/terrains_peering_bit/top_left_corner = 0
+2:2/0/terrains_peering_bit/top_side = 0
 3:2/0 = 0
-4:2/0 = 0
-5:2/0 = 0
+3:2/0/terrain_set = 0
+3:2/0/terrain = 0
+3:2/0/terrains_peering_bit/top_side = 0
 0:3/0 = 0
+0:3/0/terrain_set = 0
+0:3/0/terrain = 0
+0:3/0/terrains_peering_bit/right_side = 0
 1:3/0 = 0
+1:3/0/terrain_set = 0
+1:3/0/terrain = 0
+1:3/0/terrains_peering_bit/right_side = 0
+1:3/0/terrains_peering_bit/left_side = 0
 2:3/0 = 0
+2:3/0/terrain_set = 0
+2:3/0/terrain = 0
+2:3/0/terrains_peering_bit/left_side = 0
 3:3/0 = 0
-4:3/0 = 0
-5:3/0 = 0
-0:4/0 = 0
-1:4/0 = 0
-2:4/0 = 0
-3:4/0 = 0
-4:4/0 = 0
-5:4/0 = 0
+3:3/0/terrain_set = 0
+3:3/0/terrain = 0
 
 [sub_resource type="TileSet" id="TileSet_kmcso"]
-sources/0 = SubResource("TileSetAtlasSource_yv0v0")
-sources/1 = SubResource("TileSetAtlasSource_6pjix")
+tile_size = Vector2i(64, 64)
+terrain_set_0/mode = 0
+terrain_set_0/terrain_0/name = "Terrain 0"
+terrain_set_0/terrain_0/color = Color(0.678431, 0, 0.756863, 1)
+sources/2 = SubResource("TileSetAtlasSource_6t36t")
 
 [node name="Cena" type="Node2D"]
 metadata/_edit_vertical_guides_ = [591.0]
@@ -1338,7 +1402,7 @@ position = Vector2(551, 416)
 
 [node name="Fundo" type="Node2D" parent="."]
 
-[node name="Montanhas" type="Node" parent="Fundo"]
+[node name="Montanhas" type="Node2D" parent="Fundo"]
 
 [node name="MontanhaFlutuar" type="AnimationPlayer" parent="Fundo/Montanhas"]
 autoplay = "MontanhasFlutuantes"
@@ -1371,7 +1435,7 @@ texture = ExtResource("4_ryvpw")
 position = Vector2(1124, 309)
 texture = ExtResource("3_kchkn")
 
-[node name="Nuvens" type="Node" parent="Fundo"]
+[node name="Nuvens" type="Node2D" parent="Fundo"]
 
 [node name="Nuvens 1" type="Node2D" parent="Fundo/Nuvens"]
 
@@ -1509,9 +1573,7 @@ position = Vector2(304, 212)
 scale = Vector2(1, 1.097)
 texture = ExtResource("7_8v6a1")
 
-[node name="PointLight2D" type="PointLight2D" parent="Fundo"]
-
-[node name="Manchas" type="Node" parent="Fundo"]
+[node name="Manchas" type="Node2D" parent="Fundo"]
 
 [node name="MegaManchaBranca" type="Sprite2D" parent="Fundo/Manchas"]
 show_behind_parent = true
@@ -1596,6 +1658,7 @@ scale = Vector2(0.580373, 0.580373)
 texture = ExtResource("17_tykr3")
 
 [node name="ManchaBranca(2)" type="Sprite2D" parent="Fundo"]
+visible = false
 position = Vector2(254, 780)
 scale = Vector2(0.65739, 0.65739)
 texture = ExtResource("16_n2ial")
@@ -1617,6 +1680,9 @@ texture = ExtResource("16_n2ial")
 
 [node name="Fase" type="Node2D" parent="."]
 
-[node name="Tilemap" type="TileMap" parent="Fase"]
+[node name="Primeiro Bloco" type="TileMap" parent="Fase"]
+z_index = 3
 tile_set = SubResource("TileSet_kmcso")
+cell_quadrant_size = 64
 format = 2
+layer_0/tile_data = PackedInt32Array(458760, 2, 2, 458761, 131074, 2, 393224, 65538, 1, 393225, 131074, 1, 327690, 65538, 2, 327689, 65538, 1, 327688, 65538, 1, 262152, 65538, 0, 262154, 65538, 1, 262155, 65538, 0, 262156, 65538, 0, 262157, 65538, 0, 327693, 65538, 1, 327692, 65538, 1, 327691, 65538, 2, 393228, 2, 1, 393229, 65538, 1, 458765, 65538, 2, 458764, 2, 2, 458766, 131074, 2, 393230, 131074, 1, 327694, 131074, 1, 262158, 131074, 0, 262150, 2, 1, 327686, 2, 1, 393222, 2, 2, 393223, 65538, 2, 327687, 65538, 1, 262151, 65538, 1, 262153, 65538, 1, 196614, 2, 0, 196615, 131074, 0, 196617, 2, 0, 196618, 131074, 0, 196624, 2, 0, 262160, 2, 2, 327696, 65538, 1, 393232, 65538, 2, 393233, 131074, 2, 327697, 131074, 1, 262161, 131074, 2, 196625, 131074, 0)
