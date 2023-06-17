@@ -204,6 +204,7 @@ size = Vector2(58, 112)
 
 [node name="Burim" type="CharacterBody2D"]
 z_index = 5
+collision_mask = 2
 script = ExtResource("1_eu7sv")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -224,6 +225,8 @@ libraries = {
 }
 
 [node name="Ataque" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Ataque"]
 position = Vector2(59, -15)
