@@ -9,10 +9,12 @@ extends CharacterBody2D
 @export var mvida: int = 5
 
 var can_attack: bool = true
+var can_die: bool = false
 
 
 func _physics_process(_delta):
-	if can_attack == false:
+	if (can_attack == false or 
+	can_die == true):
 		return
 	
 	move()
@@ -62,4 +64,5 @@ func _on_ataque_body_entered(body):
 func update_mvida(value: int) -> void:
 	mvida -= value
 	if mvida <= 0:
-		return
+		can_die = true
+		animation.play("Morte")
