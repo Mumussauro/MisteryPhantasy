@@ -5,7 +5,7 @@ extends CharacterBody2D
 @onready var SPEED = 300.0
 @onready var areataq: CollisionShape2D = get_node("Ataque/CollisionShape2D")
 @export var damage: int = 1
-@export var vida: int = 10
+@export var vida: int = 5
 @export var mvida: int = 5
 
 var can_attack: bool = true
@@ -43,26 +43,32 @@ func ataque() -> void:
 	if Input.is_action_just_pressed("ataq") and can_attack:
 		can_attack = false
 		animation.play("Attack")
-
-
-func _on_animacao_animation_finished(_anim_name: String):
-	can_attack = true
-
+	
+func _on_animacao_animation_finished(anim_name: String) -> void:
+	match anim_name:
+		"Attack":
+			can_attack = true
+			
+		"Morte":
+			get_tree().reload_current_scene()
+	
 func direcao() -> void:
 	if velocity.x > 0:
 		texture.flip_h = false
-		areataq.position.x = 59
+		areataq.position.x = 29#59
 		
 	if velocity.x < 0:
 		texture.flip_h = true
-		areataq.position.x = -59
+		areataq.position.x = -29#-59 
 	return
-
+	
 func _on_ataque_body_entered(body):
-	body.update_mvida(damage)
-
-func update_mvida(value: int) -> void:
-	mvida -= value
-	if mvida <= 0:
+	body.update_vida(damage)
+	
+func update_vida(value: int) -> void:
+	vida -= value
+	if vida <= 0:
 		can_die = true
 		animation.play("Morte")
+		areataq.set_deferred("disabled", true)
+
