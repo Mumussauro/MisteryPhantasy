@@ -4,8 +4,12 @@ extends CharacterBody2D
 @onready var texture: Sprite2D = get_node("Textura")
 @onready var SPEED = 300.0
 @onready var areataq: CollisionShape2D = get_node("Ataque/CollisionShape2D")
+@export var damage: int = 1
+@export var vida: int = 10
+@export var mvida: int = 5
 
 var can_attack: bool = true
+
 
 func _physics_process(_delta):
 	if can_attack == false:
@@ -52,5 +56,10 @@ func direcao() -> void:
 		areataq.position.x = -59
 	return
 
+func _on_ataque_body_entered(body):
+	body.update_mvida(damage)
 
-#oi amor
+func update_mvida(value: int) -> void:
+	mvida -= value
+	if mvida <= 0:
+		return
