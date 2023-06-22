@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
 @onready var animation: AnimationPlayer = get_node("Animacao")
+@onready var auxanim: AnimationPlayer = get_node("AuxAnimacao")
 @onready var texture: Sprite2D = get_node("Textura")
 @onready var SPEED = 300.0
 @onready var areataq: CollisionShape2D = get_node("Ataque/CollisionShape2D")
@@ -55,11 +56,11 @@ func _on_animacao_animation_finished(anim_name: String) -> void:
 func direcao() -> void:
 	if velocity.x > 0:
 		texture.flip_h = false
-		areataq.position.x = 29#59
+		areataq.position.x = 59
 		
 	if velocity.x < 0:
 		texture.flip_h = true
-		areataq.position.x = -29#-59 
+		areataq.position.x = -59 
 	return
 	
 func _on_ataque_body_entered(body):
@@ -71,4 +72,6 @@ func update_vida(value: int) -> void:
 		can_die = true
 		animation.play("Morte")
 		areataq.set_deferred("disabled", true)
+		return
+	auxanim.play("dano")
 
