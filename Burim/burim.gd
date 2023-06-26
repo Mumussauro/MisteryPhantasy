@@ -52,6 +52,7 @@ func _on_animacao_animation_finished(anim_name: String) -> void:
 			
 		"Morte":
 			get_tree().reload_current_scene()
+		
 	
 func direcao() -> void:
 	if velocity.x > 0:
