@@ -7,7 +7,7 @@ extends CharacterBody2D
 @onready var areataq: CollisionShape2D = get_node("Ataque/CollisionShape2D")
 @export var damage: int = 1
 @export var vida: int = 5
-@export var mvida: int = 5
+
 
 var can_attack: bool = true
 var can_die: bool = false
@@ -74,5 +74,6 @@ func update_vida(value: int) -> void:
 		animation.play("Morte")
 		areataq.set_deferred("disabled", true)
 		return
+		
 	auxanim.play("dano")
 

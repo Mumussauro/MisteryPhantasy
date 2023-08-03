@@ -350,3 +350,4 @@ libraries = {
 
 [connection signal="body_entered" from="Deteccao" to="." method="_deteccao_corpo_dentro"]
 [connection signal="body_exited" from="Deteccao" to="." method="deteccao_corpo_saiu"]
+[connection signal="animation_finished" from="Animacao" to="." method="animacao_acabou"]
